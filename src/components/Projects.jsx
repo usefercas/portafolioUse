@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import projectImage from "../assets/project.jpg";
 
 const Projects = () => {
