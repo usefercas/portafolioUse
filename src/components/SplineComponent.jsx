@@ -1,12 +1,12 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
 
-const SplineComponent = () => {
+const RobotComponent = () => {
   return (
-    <div className="w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px]">
+    <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
       <Spline scene="https://prod.spline.design/mnxYiodWL6Wc4L0p/scene.splinecode" />
     </div>
   );
 };
 
-export default SplineComponent;
+export default RobotComponent;

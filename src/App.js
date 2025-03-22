@@ -1,24 +1,29 @@
-import React from "react";
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import SlideBar from "./components/SlideBar";
-import SplineComponent from "./components/SplineComponent";  // Importa el componente de Spline
+import React from 'react';
+import Spline from "@splinetool/react-spline";
+import NavBar from './components/NavBar';
+import SlideBar from './components/SlideBar';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+
+const RobotComponent = () => {
+  return (
+    <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+      <Spline scene="https://prod.spline.design/mnxYiodWL6Wc4L0p/scene.splinecode" />
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="">
+    <div className=" ">
       <NavBar />
       <SlideBar />
       <Home />
+      <RobotComponent /> {/* Aquí se añade el robot antes de los proyectos */}
       <About />
-      
-      {/* Aquí está el componente Spline antes de los proyectos */}
-      <SplineComponent />  {/* Este es el componente con la escena Spline */}
-
       <Projects />
       <Experience />
       <Contact />
