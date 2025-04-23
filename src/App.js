@@ -8,7 +8,7 @@ import SolidImage from './components/SolidImage'; // <-- ✅ Nuevo componente
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import RobotComponent from "./components/SplineComponent"; // 👈 importar componente
+
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Projects />
       <Experience />
       <Contact />
-      <RobotComponent />
+  
     </div>
   );
 }
