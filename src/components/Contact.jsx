@@ -11,39 +11,38 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-screen 2xl:mt-20 h-screen flex items-center flex-col">
+    <div className="w-screen min-h-screen mt-20 flex items-center flex-col px-4">
       <h2 className="font-semibold text-[40px]">Contact</h2>
       <form
-        // Cambia la URL aquí si es necesario
-        action="https://getform.io/f/pbgxvzma" // Aquí debes usar la URL de tu formulario de Getform
+        action="https://getform.io/f/pbgxvzma"
         method="POST"
-        className="flex flex-col items-center justify-center pt-10"
+        className="flex flex-col items-center justify-center pt-10 w-full"
         onSubmit={handleConfetti}
       >
         <input
           type="text"
           name="name"
           placeholder="Name"
-          className="border border-slate-800 mt-6 2xl:w-[400px] sm:w-[300px]"
+          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="border border-slate-800 mt-6 2xl:w-[400px] sm:w-[300px]"
+          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded"
           required
         />
         <textarea
           name="message"
           placeholder="Message"
-          className="border border-slate-800 mt-6 2xl:w-[400px] sm:w-[300px]"
+          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded"
           rows="4"
           required
         ></textarea>
         <button
           type="submit"
-          className="border border-slate-800 mt-8 2xl:w-[300px] sm:w-[120px] p-2 hover:bg-slate-800 hover:text-white transition duration-300 ease-in-out rounded-md"
+          className="border border-slate-800 mt-8 w-full max-w-[300px] p-2 hover:bg-slate-800 hover:text-white transition duration-300 ease-in-out rounded-md"
         >
           Enviar
         </button>
@@ -53,4 +52,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
