@@ -1,47 +1,56 @@
 import React from "react";
-import developerHeader from "../assets/oficial.png";
-import header from "../assets/header.png";
 import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen overflow-hidden">
-      <img alt="header" src={header} className="md:hidden w-screen" />
-      <div className="md:h-20 min-[700px]:hidden bg-[#2B2B29]"></div>
-
+    <div className="relative h-screen w-screen bg-black flex items-center justify-center overflow-hidden">
+      {/* Fondo que siempre se muestra completo */}
       <img
-        alt="developer"
-        src={developerHeader}
-        className="absolute left-[50%] top-[130px] md:left-[20%] md:static"
+        src="/portatil3.png"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-contain"
       />
 
-      <div className="absolute md:text-[40px] xl:left-[-20px] xl:text-[40px] md:left-[0] md:w-screen p-6 md:static left-[20%] top-[40%] w-[619px] h-[250px] text-black text-[64px] font-normal flex flex-col">
-        {/* Texto con efecto máquina de escribir */}
-        <div
-          className="text-[calc(1rem+2vw)] leading-snug"
+      {/* Capa oscura para mejorar contraste */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      {/* Contenido */}
+      <div className="relative z-10 text-center px-6 max-w-[90%] sm:max-w-[600px]">
+        {/* Texto con efecto máquina y color #48D1CC */}
+        <h1
+          className="text-[clamp(2rem,6vw,4rem)] font-bold leading-tight inline-block border-r-2 whitespace-nowrap overflow-hidden"
           style={{
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-            borderRight: "2px solid black",
-            display: "inline-block",
-            animation: "typing 4s steps(40, end) 1s forwards, blink 0.75s step-end infinite",
-            maxWidth: "100%",
+            color: "#FFFFFF", // Texto blanco
+            borderColor: "#FFFFFF", // Border blanco
+            animation:
+              "typing 4s steps(40, end) 1s forwards, blink 0.75s step-end infinite",
           }}
         >
-          Hola, soy Eusebio Fernandez.
-        </div>
+          Hola, soy{" "}
+          <span style={{ color: "#48D1CC" }}>Eusebio Fernandez</span>
+        </h1>
 
-        {/* Botón separado del efecto */}
+        {/* Texto adicional con color blanco */}
+        <p className="text-[clamp(1rem,4vw,1.5rem)] text-white mt-4">
+          Soy Web Developer
+        </p>
+
+        {/* Botón con fondo #48D1CC y texto blanco */}
         <Link
-          className="cursor-pointer text-[20px] text-white bg-slate-500 mt-6 p-4 w-fit"
           to="Projects"
-          smooth="500"
+          smooth={true}
+          duration={500}
+          className="mt-6 inline-block px-6 py-3 rounded transition"
+          style={{
+            backgroundColor: "#48D1CC", // Color de fondo del botón
+            color: "#FFFFFF", // Texto blanco
+          }}
         >
           Projects
         </Link>
       </div>
 
-      {/* Estilos para animación */}
+      {/* Animaciones CSS */}
       <style>
         {`
           @keyframes typing {

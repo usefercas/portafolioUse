@@ -27,9 +27,10 @@ const Experience = () => {
   return (
     <div
       name="Experience"
-      className="min-h-screen w-full flex flex-col items-center justify-center bg-[#2B2B29] px-4"
+      className="min-h-screen w-full flex flex-col items-center justify-center bg-[#1f1f1f] px-4"
     >
-      <h2 className="font-semibold text-[40px] text-white pt-10">Experience</h2>
+      <h2 className="font-semibold text-[40px] text-[#48D1CC] pt-10">Experiencia</h2>
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-10 pb-20 w-full max-w-[1200px]">
         {technologies.map((t) => (
           <div key={t.name} className="flex justify-center items-center">

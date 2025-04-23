@@ -11,8 +11,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen mt-20 flex items-center flex-col px-4">
-      <h2 className="font-semibold text-[40px]">Contact</h2>
+    <div className="w-screen min-h-screen flex items-center flex-col px-4 bg-black">
+      <h2 className="font-semibold text-[40px] text-[#48D1CC] mt-10">Contacto</h2>
+
       <form
         action="https://getform.io/f/pbgxvzma"
         method="POST"
@@ -23,26 +24,30 @@ const Contact = () => {
           type="text"
           name="name"
           placeholder="Name"
-          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded"
+          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded"
+          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
           required
         />
         <textarea
           name="message"
           placeholder="Message"
-          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded"
+          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
           rows="4"
           required
         ></textarea>
         <button
           type="submit"
-          className="border border-slate-800 mt-8 w-full max-w-[300px] p-2 hover:bg-slate-800 hover:text-white transition duration-300 ease-in-out rounded-md"
+          className="mt-8 w-full max-w-[300px] p-2 rounded-md transition duration-300 ease-in-out"
+          style={{
+            backgroundColor: "#48D1CC",
+            color: "#fff",
+          }}
         >
           Enviar
         </button>
