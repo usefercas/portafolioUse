@@ -12,7 +12,12 @@ const Home = () => {
       />
 
       {/* Contenido encima de la imagen */}
-      <div className="relative z-10 text-center px-6 max-w-[90%] sm:max-w-[600px]">
+      <div
+        className="relative z-10 text-center px-6 max-w-[90%] sm:max-w-[600px] scale-100 sm:scale-100"
+        style={{
+          transformOrigin: "center",
+        }}
+      >
         <h1
           className="text-[clamp(2rem,6vw,4rem)] font-bold leading-tight inline-block border-r-2 whitespace-nowrap overflow-hidden"
           style={{
@@ -25,7 +30,10 @@ const Home = () => {
           Hola, soy <span style={{ color: "#48D1CC" }}>Eusebio Fernandez</span>
         </h1>
 
-        <p className="text-[clamp(1rem,4vw,1.5rem)] text-white mt-4">
+        <p
+          className="text-[clamp(1rem,4vw,1.5rem)] mt-4"
+          style={{ color: "#48D1CC" }}
+        >
           Soy Web Developer
         </p>
 
@@ -40,13 +48,12 @@ const Home = () => {
             color: "#FFFFFF",
           }}
         >
-          {/* Cuadrado detrás del texto */}
-          <div className="absolute inset-0 bg-white bg-opacity-30 rounded-xl p-2"></div>
-          Projects
+          <div className="absolute inset-0 bg-white bg-opacity-30 rounded-xl p-2 pointer-events-none"></div>
+          <span className="relative z-10">Projects</span>
         </Link>
       </div>
 
-      {/* Animaciones CSS */}
+      {/* Animaciones CSS y escalado responsivo */}
       <style>
         {`
           @keyframes typing {
@@ -56,6 +63,12 @@ const Home = () => {
 
           @keyframes blink {
             50% { border-color: transparent }
+          }
+
+          @media (max-width: 640px) {
+            div[style*="--tw-scale-x"] {
+              transform: scale(0.8);
+            }
           }
         `}
       </style>
