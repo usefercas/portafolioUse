@@ -3,17 +3,17 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="relative h-screen w-screen flex items-center justify-center overflow-hidden">
-      {/* Imagen de fondo sin filtros */}
+    <div className="relative w-screen h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Imagen de fondo ajustada para pantallas pequeñas */}
       <img
         src="/usee.png"
         alt="Portátil"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover sm:object-contain"
       />
 
       {/* Contenido encima de la imagen */}
       <div
-        className="relative z-10 text-center px-6 max-w-[90%] sm:max-w-[600px] scale-100 sm:scale-100"
+        className="relative z-10 text-center px-6 max-w-[90%] sm:max-w-[600px]"
         style={{
           transformOrigin: "center",
         }}
@@ -53,7 +53,7 @@ const Home = () => {
         </Link>
       </div>
 
-      {/* Animaciones CSS y escalado responsivo */}
+      {/* Estilos adicionales */}
       <style>
         {`
           @keyframes typing {
@@ -66,7 +66,7 @@ const Home = () => {
           }
 
           @media (max-width: 640px) {
-            div[style*="--tw-scale-x"] {
+            .text-center {
               transform: scale(0.8);
             }
           }
