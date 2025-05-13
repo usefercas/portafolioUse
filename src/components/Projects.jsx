@@ -28,9 +28,11 @@ const Projects = () => {
   return (
     <div
       name="Projects"
-      className="h-screen w-screen flex items-center flex-col"
+      className="w-screen flex items-center flex-col" // Eliminamos h-screen
       style={{
-        backgroundColor: "#fdf6e3", // Fondo igual que Experience
+        backgroundImage: 'url(/pro.png)', // Aplicar la imagen de fondo
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       {/* Título Projects con color azul #48D1CC */}
