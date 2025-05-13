@@ -41,7 +41,7 @@ const NavBar = () => {
       {isMenuopen &&
         links.map((l) => (
           <Link
-            className="text-[30px] text-black cursor-pointer"
+            className="text-[30px] text-[#7B5E57] cursor-pointer"
             onClick={() => setIsMenuOpen(false)}
             to={l.link}
             key={l.id}

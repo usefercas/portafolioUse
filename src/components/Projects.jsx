@@ -35,13 +35,13 @@ const Projects = () => {
         backgroundPosition: 'center',
       }}
     >
-      {/* Título Projects con color azul #48D1CC */}
       <h2
         className="font-semibold text-[40px]"
-        style={{ color: "#48D1CC" }}
+        style={{ color: "#8B4513" }} // Marrón
       >
         Projects
       </h2>
+
 
       {/* Grid de proyectos */}
       <div className="gap-4 mt-10 grid grid-cols-3 md:grid-cols-1">

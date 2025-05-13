@@ -13,9 +13,9 @@ const Contact = () => {
   return (
     <div
       className="w-screen min-h-screen flex items-center flex-col px-4"
-      style={{ backgroundColor: "#fdf6e3" }} // Actualizado para usar el mismo fondo que About
+      style={{ backgroundColor: "#fdf6e3" }} // Fondo beige claro
     >
-      <h2 className="font-semibold text-[40px] text-[#48D1CC] mt-10">Contacto</h2>
+      <h2 className="font-semibold text-[40px] text-[#8B4513] mt-10">Contacto</h2>
 
       <form
         action="https://getform.io/f/pbgxvzma"
@@ -27,20 +27,20 @@ const Contact = () => {
           type="text"
           name="name"
           placeholder="Name"
-          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
+          className="border border-[#8B4513] mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
+          className="border border-[#8B4513] mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
           required
         />
         <textarea
           name="message"
           placeholder="Message"
-          className="border border-slate-800 mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
+          className="border border-[#8B4513] mt-6 w-full max-w-[400px] px-4 py-2 rounded bg-white"
           rows="4"
           required
         ></textarea>
@@ -48,8 +48,9 @@ const Contact = () => {
           type="submit"
           className="mt-8 w-full max-w-[300px] p-2 rounded-md transition duration-300 ease-in-out"
           style={{
-            backgroundColor: "#48D1CC",
+            backgroundColor: "#8B4513", // Botón marrón
             color: "#fff",
+            border: "2px solid #8B4513", // Borde marrón
           }}
         >
           Enviar

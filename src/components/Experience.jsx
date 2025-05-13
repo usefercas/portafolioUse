@@ -32,7 +32,8 @@ const Experience = () => {
       className="min-h-screen w-full flex flex-col items-center justify-center px-4 mt-0" // Elimino el mt-10 para que no haya espacio extra
       style={{ backgroundColor: "#fdf6e3" }} // Fondo igual que About
     >
-      <h2 className="font-semibold text-[40px] text-[#48D1CC] pt-10">Experiencia</h2>
+      <h2 className="font-semibold text-[40px] text-[#8B4513] pt-10">Experiencia</h2>
+
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-10 pb-20 w-full max-w-[1200px]">
         {technologies.map((t) => (
