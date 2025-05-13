@@ -30,9 +30,7 @@ const Projects = () => {
       name="Projects"
       className="h-screen w-screen flex items-center flex-col"
       style={{
-        backgroundImage: 'url(/pro.png)', // Aplicar la imagen de fondo
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundColor: "#fdf6e3", // Fondo igual que Experience
       }}
     >
       {/* Título Projects con color azul #48D1CC */}
