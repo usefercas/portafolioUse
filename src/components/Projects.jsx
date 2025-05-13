@@ -30,7 +30,7 @@ const Projects = () => {
       name="Projects"
       className="h-screen w-screen flex items-center flex-col"
       style={{
-        backgroundImage: 'url(/madera1.png)', // Aplicar la imagen de fondo
+        backgroundImage: 'url(/pro.png)', // Aplicar la imagen de fondo
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -40,7 +40,7 @@ const Projects = () => {
         className="font-semibold text-[40px]"
         style={{ color: "#48D1CC" }}
       >
-        Projectos
+        Projects
       </h2>
 
       {/* Grid de proyectos */}

@@ -4,16 +4,17 @@ const About = () => {
   return (
     <div
       name="About"
-      className="flex flex-col items-center h-screen w-screen bg-black"
+      className="flex flex-col items-center min-h-screen w-screen"
+      style={{ backgroundColor: "#fdf6e3" }} // beige claro
     >
-      {/* Título "Acerca de" con el color azul #48D1CC */}
-      <h2 className="font-semibold text-[40px]" style={{ color: "#48D1CC" }}>
+      {/* Título "Acerca de" con color #48D1CC */}
+      <h2 className="font-semibold text-[40px] mt-10" style={{ color: "#48D1CC" }}>
         Acerca de
       </h2>
 
-      {/* Fondo negro para la sección de texto */}
-      <div className="flex flex-col items-center justify-center w-screen mt-[5%] pt-[10%] pb-[10%] bg-black p-10">
-        <p className="text-white max-w-4xl text-center text-lg leading-7">
+      {/* Contenedor de texto */}
+      <div className="flex flex-col items-center justify-center w-full px-6 py-16">
+        <p className="max-w-4xl text-center text-lg leading-7 text-black">
           Soy un programador junior apasionado por la tecnología, con una gran curiosidad
           por todo lo relacionado con el desarrollo de software. Tengo experiencia con múltiples
           tecnologías y me adapto rápidamente a nuevas herramientas y entornos.

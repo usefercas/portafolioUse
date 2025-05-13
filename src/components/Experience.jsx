@@ -1,14 +1,15 @@
 import React from "react";
-import javascript from "../assets/technologies/javascript.png";
-import html from "../assets/technologies/html.png";
-import css from "../assets/technologies/css.png";
+import javascript from "../assets/technologies/js1.png";
+import html from "../assets/technologies/html1.png";
+import css from "../assets/technologies/css1.png";
 import firebase from "../assets/technologies/firebase.png";
 import figma from "../assets/technologies/figma.png";
-import reactjs from "../assets/technologies/reactjs.png";
+import reactjs from "../assets/technologies/react2.png";
 import github from "../assets/technologies/github.png";
-import java from "../assets/technologies/java2.png";
-import jest from "../assets/technologies/jest.png";
-import bootstrap from "../assets/technologies/bootstrap2.png";
+import java from "../assets/technologies/java3.png";
+import jest from "../assets/technologies/jest3.png";
+import bootstrap from "../assets/technologies/boot.png";
+import mongo from "../assets/technologies/mongio2.png";
 
 const Experience = () => {
   const technologies = [
@@ -22,23 +23,27 @@ const Experience = () => {
     { name: "java", imageSrc: java },
     { name: "jest", imageSrc: jest },
     { name: "bootstrap", imageSrc: bootstrap },
+    { name: "mongo", imageSrc: mongo },
   ];
 
   return (
     <div
       name="Experience"
-      className="min-h-screen w-full flex flex-col items-center justify-center bg-[#1f1f1f] px-4"
+      className="min-h-screen w-full flex flex-col items-center justify-center px-4"
+      style={{ backgroundColor: "#fdf6e3" }} // Fondo igual que About
     >
       <h2 className="font-semibold text-[40px] text-[#48D1CC] pt-10">Experiencia</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-10 pb-20 w-full max-w-[1200px]">
         {technologies.map((t) => (
           <div key={t.name} className="flex justify-center items-center">
-            <img
-              src={t.imageSrc}
-              alt={t.name}
-              className="object-contain h-[60px]"
-            />
+            <div className="w-[60px] h-[60px] flex justify-center items-center">
+              <img
+                src={t.imageSrc}
+                alt={t.name}
+                className="object-contain w-full h-full"
+              />
+            </div>
           </div>
         ))}
       </div>

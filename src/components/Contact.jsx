@@ -11,7 +11,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen flex items-center flex-col px-4 bg-black">
+    <div
+      className="w-screen min-h-screen flex items-center flex-col px-4"
+      style={{ backgroundColor: "#fdf6e3" }} // Actualizado para usar el mismo fondo que About
+    >
       <h2 className="font-semibold text-[40px] text-[#48D1CC] mt-10">Contacto</h2>
 
       <form
