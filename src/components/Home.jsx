@@ -29,16 +29,19 @@ const Home = () => {
           Soy Web Developer
         </p>
 
+        {/* Botón con cuadrado transparente detrás */}
         <Link
           to="Projects"
           smooth={true}
           duration={500}
-          className="mt-6 inline-block px-6 py-3 rounded transition hover:brightness-110"
+          className="mt-6 inline-block px-6 py-3 rounded transition hover:brightness-110 relative"
           style={{
             backgroundColor: "#48D1CC",
             color: "#FFFFFF",
           }}
         >
+          {/* Cuadrado detrás del texto */}
+          <div className="absolute inset-0 bg-white bg-opacity-30 rounded-xl p-2"></div>
           Projects
         </Link>
       </div>
