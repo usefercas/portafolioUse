@@ -5,14 +5,15 @@ const About = () => {
     <div
       name="About"
       className="flex flex-col items-center min-h-screen w-screen"
-      style={{ backgroundColor: "#fdf6e3" }} // beige claro
+      style={{
+        backgroundColor: "#fdf6e3",
+        border: "1px solid #8B4513", // Borde marrón fino
+      }}
     >
-      {/* Título "Acerca de" con color marrón */}
       <h2 className="font-semibold text-[40px] pt-10" style={{ color: "#8B4513" }}>
-        Experiencia
+        Sobre mí
       </h2>
 
-      {/* Contenedor de texto */}
       <div className="flex flex-col items-center justify-center w-full px-6 py-16">
         <p className="max-w-4xl text-center text-lg leading-7" style={{ color: "#8B4513" }}>
           Soy un programador junior apasionado por la tecnología, con una gran curiosidad

@@ -1,24 +1,24 @@
-import projectImage from "../assets/project.jpg";
+import projectImage from "../assets/use3.png";
 
 const Projects = () => {
   const projects = [
     {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae. Facilis quidem temporibus fugit aliquid corrupti, vero, debitis laborum minus repellat, est reiciendis soluta laudantium cum! Aut, quaerat dignissimos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae...",
       projectsImageSrc: projectImage,
       githubLink: "https://github.com/JustoMateos21/ecommerce-shoes-copia",
       deployLink: "https://github.com/JustoMateos21/ecommerce-shoes-copia",
     },
     {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae. Facilis quidem temporibus fugit aliquid corrupti, vero, debitis laborum minus repellat, est reiciendis soluta laudantium cum! Aut, quaerat dignissimos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae...",
       projectsImageSrc: projectImage,
       githubLink: "https://github.com/JustoMateos21/ecommerce-shoes-copia",
       deployLink: "https://github.com/JustoMateos21/ecommerce-shoes-copia",
     },
     {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae. Facilis quidem temporibus fugit aliquid corrupti, vero, debitis laborum minus repellat, est reiciendis soluta laudantium cum! Aut, quaerat dignissimos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae...",
       projectsImageSrc: projectImage,
       githubLink: "https://github.com/JustoMateos21/ecommerce-shoes-copia",
       deployLink: "https://github.com/JustoMateos21/ecommerce-shoes-copia",
@@ -28,34 +28,34 @@ const Projects = () => {
   return (
     <div
       name="Projects"
-      className="w-screen flex items-center flex-col" // Eliminamos h-screen
+      className="w-screen flex items-center flex-col py-12 px-4"
       style={{
-        backgroundImage: 'url(/pro.png)', // Aplicar la imagen de fondo
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundColor: "#fdf6e3",
+        border: "1px solid #8B4513", // Borde marrón fino
       }}
     >
-      <h2
-        className="font-semibold text-[40px]"
-        style={{ color: "#8B4513" }} // Marrón
-      >
+      <h2 className="font-semibold text-[40px]" style={{ color: "#8B4513" }}>
         Projects
       </h2>
 
-
-      {/* Grid de proyectos */}
       <div className="gap-4 mt-10 grid grid-cols-3 md:grid-cols-1">
         {projects.map((p) => (
           <div
-            className="relative w-[300px] h-[300px] border-red-100 border-spacing-1 border p-2 bg-slate-500"
+            className="relative w-[300px] h-[300px] border border-[#8B4513] p-2 rounded-lg bg-white"
             key={p.githubLink}
           >
-            <img className="object-cover" src={p.projectsImageSrc} alt="" />
-            <span className="flex flex-col p-4 absolute backdrop-blur hover:backdrop-blur-[20px] inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <p className="text-white">{p.description}</p>
-              <div className="flex">
-                <a href={p.githubLink} className="text-white">Github</a>
-                <a className="ml-4 text-white" href={p.deployLink}>
+            <img
+              className="object-cover w-full h-full rounded-lg"
+              src={p.projectsImageSrc}
+              alt="project"
+            />
+            <span className="flex flex-col p-4 absolute backdrop-blur hover:backdrop-blur-[20px] inset-0 items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-[#00000050] rounded-lg">
+              <p className="text-white text-sm">{p.description}</p>
+              <div className="flex mt-2 space-x-4">
+                <a href={p.githubLink} className="text-white underline">
+                  Github
+                </a>
+                <a href={p.deployLink} className="text-white underline">
                   Deploy
                 </a>
               </div>

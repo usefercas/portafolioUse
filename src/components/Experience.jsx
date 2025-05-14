@@ -1,15 +1,15 @@
 import React from "react";
-import javascript from "../assets/technologies/js1.png";
-import html from "../assets/technologies/html1.png";
-import css from "../assets/technologies/css1.png";
+import javascript from "../assets/technologies/jsofi.png";
+import html from "../assets/technologies/1.png";
+import css from "../assets/technologies/cssofi.png";
 import firebase from "../assets/technologies/firebase.png";
 import figma from "../assets/technologies/figma.png";
-import reactjs from "../assets/technologies/react2.png";
-import github from "../assets/technologies/github.png";
-import java from "../assets/technologies/java3.png";
-import jest from "../assets/technologies/jest3.png";
-import bootstrap from "../assets/technologies/boot.png";
-import mongo from "../assets/technologies/mongio2.png";
+import reactjs from "../assets/technologies/reactofi.png";
+import github from "../assets/technologies/gitofi.png";
+import java from "../assets/technologies/javaofi.png";
+import jest from "../assets/technologies/jestofi.png";
+import bootstrap from "../assets/technologies/bootofi.png";
+import mongo from "../assets/technologies/mongoofi.png";
 
 const Experience = () => {
   const technologies = [
@@ -29,11 +29,15 @@ const Experience = () => {
   return (
     <div
       name="Experience"
-      className="min-h-screen w-full flex flex-col items-center justify-center px-4 mt-0" // Elimino el mt-10 para que no haya espacio extra
-      style={{ backgroundColor: "#fdf6e3" }} // Fondo igual que About
+      className="min-h-screen w-full flex flex-col items-center justify-center px-4 mt-0"
+      style={{
+        backgroundColor: "#fdf6e3",
+        border: "1px solid #8B4513", // Borde marrón fino
+      }}
     >
-      <h2 className="font-semibold text-[40px] text-[#8B4513] pt-10">Experiencia</h2>
-
+      <h2 className="font-semibold text-[40px] text-[#8B4513] pt-10">
+        Experiencia
+      </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-10 pb-20 w-full max-w-[1200px]">
         {technologies.map((t) => (
@@ -42,7 +46,7 @@ const Experience = () => {
               <img
                 src={t.imageSrc}
                 alt={t.name}
-                className="object-contain w-full h-full"
+                className="object-contain w-full h-full filter sepia-100" // Cambié aquí para aplicar un filtro sepia
               />
             </div>
           </div>

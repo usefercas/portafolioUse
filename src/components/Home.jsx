@@ -37,7 +37,7 @@ const Home = () => {
             fontSize: "clamp(1rem, 4vw, 1.5rem)",
           }}
         >
-          Soy Web Developer
+         Desarrollador Web Full Stack
         </p>
 
         <Link

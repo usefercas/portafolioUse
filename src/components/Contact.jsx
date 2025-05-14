@@ -13,7 +13,10 @@ const Contact = () => {
   return (
     <div
       className="w-screen min-h-screen flex items-center flex-col px-4"
-      style={{ backgroundColor: "#fdf6e3" }} // Fondo beige claro
+      style={{
+        backgroundColor: "#fdf6e3",
+        border: "1px solid #8B4513", // Borde marrón fino
+      }}
     >
       <h2 className="font-semibold text-[40px] text-[#8B4513] mt-10">Contacto</h2>
 
@@ -48,9 +51,9 @@ const Contact = () => {
           type="submit"
           className="mt-8 w-full max-w-[300px] p-2 rounded-md transition duration-300 ease-in-out"
           style={{
-            backgroundColor: "#8B4513", // Botón marrón
+            backgroundColor: "#8B4513",
             color: "#fff",
-            border: "2px solid #8B4513", // Borde marrón
+            border: "1px solid #8B4513", // Borde marrón fino
           }}
         >
           Enviar

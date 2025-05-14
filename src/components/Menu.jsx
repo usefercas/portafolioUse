@@ -8,19 +8,19 @@ const Menu = ({ isMenuOpen, handleMenu }) => {
     >
       {/* Línea superior */}
       <div
-        className={`absolute top-0 left-0 w-full h-[6px] sm:h-[7px] md:h-[8px] lg:h-[9px] bg-[#7B5E57] transition-transform duration-300 ${
+        className={`absolute top-0 left-0 w-full h-[6px] sm:h-[7px] md:h-[8px] lg:h-[9px] bg-[#8B4513] transition-transform duration-300 ${
           isMenuOpen ? "rotate-45 top-[12px]" : ""
         }`}
       />
 
       {/* Línea del medio (solo si está cerrado) */}
       {!isMenuOpen && (
-        <div className="absolute top-[12px] left-0 w-full h-[6px] sm:h-[7px] md:h-[8px] lg:h-[9px] bg-[#7B5E57] transition-opacity duration-300" />
+        <div className="absolute top-[12px] left-0 w-full h-[6px] sm:h-[7px] md:h-[8px] lg:h-[9px] bg-[#8B4513] transition-opacity duration-300" />
       )}
 
       {/* Línea inferior */}
       <div
-        className={`absolute left-0 w-full h-[6px] sm:h-[7px] md:h-[8px] lg:h-[9px] bg-[#7B5E57] transition-transform duration-300 ${
+        className={`absolute left-0 w-full h-[6px] sm:h-[7px] md:h-[8px] lg:h-[9px] bg-[#8B4513] transition-transform duration-300 ${
           isMenuOpen ? "rotate-[-45deg] top-[12px]" : "top-[24px]"
         }`}
       />
