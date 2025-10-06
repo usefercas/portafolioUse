@@ -38,7 +38,7 @@ const SlideBar = () => {
           Resume <AiOutlineFilePdf size={30} />
         </>
       ),
-      href: "/resume1.pdf",
+      href: "/EusebioFernandezCastaño.pdf",
       style: "rounded-br-md",
       download: true,
     },
